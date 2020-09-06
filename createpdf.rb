@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+# frozen_string_literal: true
+
 require 'prawn'
 require 'rqrcode'
 
@@ -46,7 +48,7 @@ def generate infile, outfile
 end
 
 if ARGV.size < 2
-  warn "Usage: #{$0} codes.txt outfile.pdf"
+  warn "Usage: #{$PROGRAM_NAME} codes.txt outfile.pdf"
   exit 1
 end
 
