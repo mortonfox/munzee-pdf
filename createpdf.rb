@@ -9,7 +9,7 @@ def generate infile, outfile
   codes = File.open(infile) { |f| f.each_line.map(&:chomp) }
 
   pngs = codes.map { |code|
-    qr = RQRCode::QRCode.new(code, level: :h)
+    qr = RQRCode::QRCode.new(code, level: :m)
     qr.as_png(
       bit_depth: 1,
       color_mode: ChunkyPNG::COLOR_GRAYSCALE,
