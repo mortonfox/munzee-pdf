@@ -1,11 +1,21 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.7.0)
+      public_suffix (>= 2.0.2, < 5.0)
     chunky_png (1.4.0)
+    css_parser (1.9.0)
+      addressable
     pdf-core (0.9.0)
     prawn (2.4.0)
       pdf-core (~> 0.9.0)
       ttfunk (~> 1.7)
+    prawn-svg (0.32.0)
+      css_parser (~> 1.6)
+      prawn (>= 0.11.1, < 3)
+      rexml (~> 3.2)
+    public_suffix (4.0.6)
+    rexml (3.2.5)
     rqrcode (1.2.0)
       chunky_png (~> 1.0)
       rqrcode_core (~> 0.2)
@@ -17,6 +27,7 @@ PLATFORMS
 
 DEPENDENCIES
   prawn
+  prawn-svg
   rqrcode
 
 BUNDLED WITH
