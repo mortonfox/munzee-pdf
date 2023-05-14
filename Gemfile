@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-# Required since Ruby 3.1
+# matrix is used by prawn gem. Need to explicitly add it since Ruby 3.1
 gem 'matrix'
 
 gem 'prawn'
